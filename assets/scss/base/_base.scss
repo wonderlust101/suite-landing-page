@@ -4,6 +4,10 @@
   @include a.map-to-root(clr, a.$colors);
 }
 
+body {
+  background-color: var(--clr-primary-color-cream-white);
+}
+
 ul {
   list-style: none;
 }

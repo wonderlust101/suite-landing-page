@@ -1,0 +1,41 @@
+@use '../abstract' as a;
+
+.footer {
+  background-color: var(--clr-primary-color-cream);
+
+  &__content {
+    grid-area: 1/2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.25rem;
+    padding: 36.5rem 0 5rem;
+
+    @include a.breakpoint(medium) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 27.5rem 0 5rem;
+    }
+
+    @include a.breakpoint(large) {
+      padding: 25rem 0 6rem;
+    }
+  }
+  
+  &__copyright {
+    font-size: 0.9375rem;
+  }
+
+  &__socials-flex {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__socials-icon {
+    color: var(--clr-primary-color-dark-blue);
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
